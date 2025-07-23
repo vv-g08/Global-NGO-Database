@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Girls Who Code",
+    "lat": 40.7128,
+    "lng": -74.0060,
+    "category": "tech",
+    "url": "https://girlswhocode.com"
+  },
+  {
+    "name": "Feeding America",
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "category": "hunger",
+    "url": "https://www.feedingamerica.org"
+  },
+  {
+    "name": "She Should Run",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "category": "womens-rights",
+    "url": "https://sheshouldrun.org"
+  }
+]
