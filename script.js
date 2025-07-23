@@ -7,3 +7,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Add example pin
+
+fetch("nonprofits.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((org) => {
+      L.marker([org.lat, org.lng])
+        .addTo(map)
+        .bindPopup(`<b>${org.name}</b><br>${org.category}`);
+    });
+  });
