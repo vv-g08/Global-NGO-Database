@@ -14,6 +14,6 @@ fetch("nonprofits.json")
     data.forEach((org) => {
       L.marker([org.lat, org.lng])
         .addTo(map)
-        .bindPopup(`<b>${org.name}</b><br>${org.category}`);
+        .bindPopup(`<b>${org.name}</b><br>${org.category}<br><a href="${org.url}" target="_blank">Visit Website</a>`);
     });
   });
